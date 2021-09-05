@@ -1,2 +1,2 @@
 # DSA-Practice
-This repo contains all the dsa questions solved during my course time.
+ ✔ This repo contains all the dsa questions solved by me during my course time 😃. 
