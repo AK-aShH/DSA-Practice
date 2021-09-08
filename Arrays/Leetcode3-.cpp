@@ -16,16 +16,6 @@ public:
            int i=p-1,j=p;
         while(i>=0||j<=l-1)
         {
-            if(i<0){
-                for(int k=j;k<l;k++)
-                    ans.push_back(nums[k]*nums[k]);
-                break;
-            }
-             if(j>l-1){
-                for(int k=i;k>=0;k--)
-                    ans.push_back(nums[k]*nums[k]);
-                break;
-            }
             int le=nums[i]*nums[i];
             int r=nums[j]*nums[j];
             if((le)>=(r))
@@ -34,6 +24,14 @@ public:
                 if((le)<(r))         
                 {ans.push_back(le);i--;}     
         }
+         if(i<0){
+                for(int k=j;k<l;k++)
+                    ans.push_back(nums[k]*nums[k]);
+            }
+             if(j>l-1){
+                for(int k=i;k>=0;k--)
+                    ans.push_back(nums[k]*nums[k]);
+            }
         return ans;
     }
 };
